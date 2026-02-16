@@ -1,19 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HP比較デモ</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HP改善デモ｜Before→Afterで何を直したか</title>
+  <meta name="description" content="カスHP→修正HPで、どこを直して何が良くなったかをBefore/Afterで一瞬でわかるように説明します。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- 任意：フォント入れたくなければ次の1行消してOK -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-  <h1>HP比較デモ（準備中）</h1>
-  <p>カスHP → 修正HP の説明資料</p>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">mainac｜HP改善デモ</div>
+      <nav class="nav">
+        <a href="#compare">比較</a>
+        <a href="#points">直した点</a>
+        <a href="#contact" class="nav__cta">相談</a>
+      </nav>
+      <button class="hamburger" aria-label="メニュー" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-nav container" hidden>
+      <a href="#compare">比較</a>
+      <a href="#points">直した点</a>
+      <a href="#contact">相談</a>
+    </div>
+  </header>
 
-  <ul>
-    <li><a href="/before/" target="_blank" rel="noopener">① カスHP（Before）を見る</a></li>
-    <li><a href="/after/" target="_blank" rel="noopener">② 修正HP（After）を見る</a></li>
-  </ul>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="badge">Before → After を見れば一発で分かる</p>
+        <h1 class="hero__title">
+          「デザインを変えただけ」ではありません。<br />
+          <span class="accent">問い合わせにつながる構造</span>に直しました。
+        </h1>
+        <p class="hero__lead">
+          カスHP → 修正HPで、どこを直したか／なぜ直したか／何が良くなったかを短く説明します。
+        </p>
 
-  <p>次：どこを直したかを、比較しながら説明するLPにします。</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#compare">まず比較を見る</a>
+          <a class="btn btn--ghost" href="#contact">無料で相談する</a>
+        </div>
+
+        <ul class="hero__meta">
+          <li>対応：LP作成 / 修正 / 保守</li>
+          <li>連絡：X DM / Googleフォーム</li>
+          <li>目的：まずは実績づくり価格</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMPARE -->
+    <section id="compare" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Before / After 比較</h2>
+          <p>まずは全体の違いを見せます。細部は後から。</p>
+        </div>
+
+        <!-- 切替（スクショ/実物リンク） -->
+        <div class="tabs" role="tablist" aria-label="表示切替">
+          <button class="tab is-active" role="tab" data-view="shots" aria-selected="true">スクショで一瞬比較</button>
+          <button class="tab" role="tab" data-view="live" aria-selected="false">実物サイトを開く</button>
+        </div>
+
+        <!-- スクショ比較 -->
+        <div class="panel" data-panel="shots">
+          <div class="compare-grid">
+            <article class="card">
+              <div class="card__head">
+                <span class="tag tag--before">Before</span>
+                <h3>カスHP（例）</h3>
+              </div>
+              <!-- ここを差し替え：assets/before.png -->
+              <img class="shot" src="./assets/before.png" alt="Beforeのスクリーンショット" loading="lazy" />
+              <ul class="bullets">
+                <li>誰向けか分からない（ターゲット不明）</li>
+                <li>次の行動が分からない（迷う）</li>
+                <li>信頼要素が抽象（判断材料が少ない）</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card__head">
+                <span class="tag tag--after">After</span>
+                <h3>修正HP（例）</h3>
+              </div>
+              <!-- ここを差し替え：assets/after.png -->
+              <img class="shot" src="./assets/after.png" alt="Afterのスクリーンショット" loading="lazy" />
+              <ul class="bullets">
+                <li>誰向けか3秒で分かる（小規模事業者向け等）</li>
+                <li>行動が1択（無料相談など）</li>
+                <li>実績・範囲を具体化（判断材料が増える）</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="note">
+            <strong>ポイント：</strong>
+            「おしゃれ」ではなく <u>“迷わず問い合わせできる構造”</u> に変えたことが価値です。
+          </div>
+        </div>
+
+        <!-- 実物リンク -->
+        <div class="panel" data-panel="live" hidden>
+          <div class="live-links">
+            <a class="btn btn--ghost" href="/before/" target="_blank" rel="noopener">Before（カスHP）を実物で開く</a>
+            <a class="btn btn--primary" href="/after/" target="_blank" rel="noopener">After（修正HP）を実物で開く</a>
+          </div>
+          <p class="muted">※スマホだと比較しにくいので、まずはスクショ比較が最速です。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- POINTS -->
+    <section id="points" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>どこを直したか（3点だけ）</h2>
+          <p>専門用語ではなく「相手が判断できる言葉」で説明します。</p>
+        </div>
+
+        <div class="points">
+          <article class="point">
+            <div class="point__num">01</div>
+            <h3>誰向けかを明確化</h3>
+            <p>「Web制作ならお任せください」では刺さらない。<br>対象（例：小規模事業者）を明示して、自分ごと化させました。</p>
+          </article>
+
+          <article class="point">
+            <div class="point__num">02</div>
+            <h3>行動を1択にする</h3>
+            <p>メニューで迷わせると離脱します。<br>最初の行動（無料相談/問い合わせ）を1つに絞って誘導しました。</p>
+          </article>
+
+          <article class="point">
+            <div class="point__num">03</div>
+            <h3>信頼を「構造」で作る</h3>
+            <p>「丁寧・安心」だけでは弱い。<br>実績・対応範囲・納期目安など“判断材料”を増やしました。</p>
+          </article>
+        </div>
+
+        <div class="kpi">
+          <div class="kpi__item">
+            <div class="kpi__label">狙い</div>
+            <div class="kpi__value">問い合わせ率UP</div>
+          </div>
+          <div class="kpi__item">
+            <div class="kpi__label">手段</div>
+            <div class="kpi__value">情報設計 & 導線設計</div>
+          </div>
+          <div class="kpi__item">
+            <div class="kpi__label">やらない</div>
+            <div class="kpi__value">装飾だけの改善</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>無料相談（まずは短文でOK）</h2>
+          <p>「何を頼めるか分からない」でもOK。ニーズの吸い上げが目的です。</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__box">
+            <h3>連絡方法</h3>
+            <ol class="steps">
+              <li>XのDMで「HP見て」と送る</li>
+              <li>URLと悩み（例：問い合わせが来ない）を1行</li>
+              <li>こちらから改善案と概算を返す</li>
+            </ol>
+
+            <div class="contact__cta">
+              <!-- ここは自分の導線に差し替え -->
+              <a class="btn btn--primary" href="#" target="_blank" rel="noopener">XのDMで相談する（リンク差し替え）</a>
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Googleフォーム（リンク差し替え）</a>
+            </div>
+
+            <p class="muted">
+              ※現フェーズ：実績づくり価格。<br>
+              ※「書いてない依頼」も一応受け付けます（できない場合も市場情報として価値があるため）。
+            </p>
+          </div>
+
+          <aside class="contact__aside">
+            <h3>対応できること（例）</h3>
+            <ul class="check">
+              <li>LPの文章修正（誰向け/何を/どう頼むか）</li>
+              <li>見た目の整備（余白、文字、配色の整理）</li>
+              <li>導線改善（CTA、フォーム、問い合わせ導線）</li>
+              <li>画像差し替え（必要ならAI修正も）</li>
+            </ul>
+
+            <div class="mini">
+              <div class="mini__title">実物リンク</div>
+              <a href="/before/" target="_blank" rel="noopener">Beforeを見る</a>
+              <a href="/after/" target="_blank" rel="noopener">Afterを見る</a>
+            </div>
+          </aside>
+        </div>
+
+        <footer class="footer">
+          <small>© mainac4260.github.io</small>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
 </body>
 </html>
