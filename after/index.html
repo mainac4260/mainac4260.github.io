@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小規模事業者向けWeb制作・修正 | 株式会社サンプル</title>
+    <meta name="description" content="小規模事業者・個人事業主様向けのWeb制作サービス。LP修正3,000円〜、最短即日対応可能。問い合わせにつながる信頼性の高いホームページを制作します。">
+
+    <!-- OGP Settings -->
+    <meta property="og:title" content="小規模事業者向けWeb制作・修正 | 株式会社サンプル">
+    <meta property="og:description" content="小規模事業者・個人事業主様向けのWeb制作サービス。LP修正3,000円〜、最短即日対応可能。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://placehold.jp/1200x630.png"> <!-- Placeholder image -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "株式会社サンプル",
+      "image": "https://placehold.jp/1200x630.png",
+      "description": "小規模事業者・個人事業主様向けのWeb制作サービス。",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "東京都",
+        "addressCountry": "JP"
+      },
+      "priceRange": "3,000JPY~"
+    }
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <h1><a href="#">株式会社サンプル</a></h1>
+            <nav id="nav">
+                <button id="menu-toggle" aria-label="メニューを開く">☰</button>
+                <ul>
+                    <li><a href="#service">サービス</a></li>
+                    <li><a href="#achievements">実績</a></li>
+                    <li><a href="#price">料金</a></li>
+                    <li><a href="#flow">流れ</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h2>小規模事業者向け<br>問い合わせにつながる<br>Web制作・修正</h2>
+                <p class="hero-sub">納期目安：最短3日〜 | 対応範囲：LP制作・修正・保守 | 連絡：Chatwork/Slack/Zoom対応</p>
+                <a href="#contact" class="btn btn-primary btn-large">無料で相談する</a>
+            </div>
+        </section>
+
+        <section id="achievements" class="section-bg-light">
+            <div class="container">
+                <h3 class="section-title">安心の実績と信頼</h3>
+                <div class="achievement-grid">
+                    <div class="achievement-item">
+                        <div class="achievement-number">50<span>件以上</span></div>
+                        <p class="achievement-desc">小規模事業者様を中心に、<br>豊富な制作・修正実績があります。</p>
+                    </div>
+                    <div class="achievement-list">
+                        <h4>主な対応実績（例）</h4>
+                        <ul>
+                            <li>LP（ランディングページ）の文言修正・画像差し替え</li>
+                            <li>WordPressサイトの表示崩れ修正</li>
+                            <li>お問い合わせフォームのスパム対策</li>
+                            <li>ページの表示速度改善（Core Web Vitals対策）</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <h4>お客様の声（事例イメージ）</h4>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            「急な修正依頼にも関わらず、即日で対応していただき助かりました。専門用語を使わず丁寧に説明してくれるので、Webに詳しくない私でも安心でした。」</p>
+                        <p class="testimonial-author">整体院経営 K様</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service">
+            <div class="container">
+                <h3 class="section-title">サービス紹介</h3>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h4>丁寧なヒアリング</h4>
+                        <p>お客様のビジネスモデルやターゲット層を深く理解するため、初回ヒアリングを入念に行います。「なんとなく」のイメージを具体的なWeb戦略に落とし込みます。</p>
+                    </div>
+                    <div class="service-card">
+                        <h4>迅速・柔軟な対応</h4>
+                        <p>「明日までにバナーを変えたい」「テキストを一行だけ直したい」といった急なご要望にもスピーディーに対応。チャットツールでの連絡も可能です。</p>
+                    </div>
+                    <div class="service-card">
+                        <h4>長期的な安心サポート</h4>
+                        <p>作った後も終わりではありません。サーバーの更新、セキュリティ対策、日々の更新作業など、ビジネスの成長に合わせて継続的にサポートします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="price" class="section-bg-light">
+            <div class="container">
+                <h3 class="section-title">料金目安</h3>
+                <div class="price-table-wrapper">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>メニュー</th>
+                                <th>料金（税込）</th>
+                                <th>内容例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>軽微な修正</td>
+                                <td>3,000円〜</td>
+                                <td>テキスト変更、画像差替、色変更など</td>
+                            </tr>
+                            <tr>
+                                <td>ページ制作</td>
+                                <td>15,000円〜</td>
+                                <td>LP制作、下層ページ追加（1Pあたり）</td>
+                            </tr>
+                            <tr>
+                                <td>サイトリニューアル</td>
+                                <td>100,000円〜</td>
+                                <td>5ページ程度のコーポレートサイト制作</td>
+                            </tr>
+                            <tr>
+                                <td>保守・運用</td>
+                                <td>5,000円〜/月</td>
+                                <td>サーバー管理、バックアップ、月1回更新</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="price-note">※上記は目安です。仕様やボリュームにより変動します。<br>※大幅なデザイン変更やシステム開発が必要な場合は別途お見積りとなります。</p>
+                <div class="center-cta">
+                    <a href="#contact" class="btn btn-primary">見積りを依頼する</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="flow">
+            <div class="container">
+                <h3 class="section-title">ご利用の流れ</h3>
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="step-num">01</div>
+                        <h4>ご相談</h4>
+                        <p>フォームまたはメールにてお問い合わせください。</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">02</div>
+                        <h4>お見積り</h4>
+                        <p>ヒアリング内容を元に、作業内容と費用をご提示します。</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">03</div>
+                        <h4>作業・制作</h4>
+                        <p>内容にご納得いただけましたら作業を開始します。</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">04</div>
+                        <h4>確認・修正</h4>
+                        <p>テスト環境等でご確認いただき、必要に応じ修正します。</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">05</div>
+                        <h4>納品</h4>
+                        <p>本番環境へ反映し、納品完了となります。</p>
+                    </div>
+                </div>
+                <p class="flow-note">※平日夜間や土日の対応も事前にご相談いただければ可能です。</p>
+            </div>
+        </section>
+
+        <section id="faq" class="section-bg-light">
+            <div class="container">
+                <h3 class="section-title">よくある質問</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4 class="faq-question">相談だけでも大丈夫ですか？</h4>
+                        <p class="faq-answer">はい、もちろん大丈夫です。現状の課題ややりたいことをお聞かせいただければ、最適な解決策をご提案します。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">どこまでが「軽微な修正」に含まれますか？</h4>
+                        <p class="faq-answer">作業時間が30分〜1時間程度で完了するものを想定しています。例：テキストの誤字修正、画像の入れ替え、リンクの変更など。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">納期はどのくらいですか？</h4>
+                        <p class="faq-answer">軽微な修正であれば、素材受領後、最短即日〜3営業日程度で対応可能です。ページ制作の場合は1週間〜が目安となります。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">写真やテキストの素材がなくても依頼できますか？</h4>
+                        <p class="faq-answer">可能です。フリー素材の選定や、ライティング代行（ヒアリングベース）も承っております（別途費用が発生する場合があります）。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">制作の途中で追加の要望が出た場合は？</h4>
+                        <p class="faq-answer">柔軟に対応いたします。ただし、当初の範囲を大きく超える場合は、追加のお見積りをご相談させていただくことがございます。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">遠隔（オンライン）での対応は可能ですか？</h4>
+                        <p class="faq-answer">はい、全国どこでも対応可能です。Zoom、Google Meet、Chatwork、Slackなど、ご希望のツールでコミュニケーション可能です。
+                        </p>
+                    </div>
+                </div>
+                <div class="center-cta">
+                    <a href="#contact" class="btn btn-primary">無料で相談する</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="company">
+            <div class="container">
+                <h3 class="section-title">会社概要</h3>
+                <div class="company-wrapper">
+                    <div class="company-message">
+                        <h4>代表挨拶</h4>
+                        <p>
+                            はじめまして。代表の山田太郎（仮）です。<br>
+                            「良いWebサイトを作りたいけれど、どこに頼めばいいかわからない」「予算が限られている」といった小規模事業者様の悩みを解決するため、本サービスを立ち上げました。<br>
+                            技術的なことは丸投げでOKです。お客様が本業に専念できるよう、Webの側面から全力でサポートいたします。
+                        </p>
+                    </div>
+                    <table class="company-table">
+                        <tr>
+                            <th>会社名</th>
+                            <td>株式会社サンプル</td>
+                        </tr>
+                        <tr>
+                            <th>設立</th>
+                            <td>2010年4月</td>
+                        </tr>
+                        <tr>
+                            <th>事業内容</th>
+                            <td>Web制作事業、コンサルティング事業</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>東京都某所</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-bg-dark">
+            <div class="container">
+                <h3 class="section-title section-title-white">お問い合わせ</h3>
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">必須</span></label>
+                        <input type="text" id="name" name="name" required placeholder="例：山田 太郎">
+                        <span class="error-message">お名前を入力してください</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">必須</span></label>
+                        <input type="email" id="email" name="email" required placeholder="例：info@example.com">
+                        <span class="error-message">正しいメールアドレスを入力してください</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+                        <textarea id="message" name="message" required placeholder="ご相談内容をご記入ください"></textarea>
+                        <span class="error-message">お問い合わせ内容を入力してください</span>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-submit">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">ホーム</a>
+                <a href="#service">サービス</a>
+                <a href="#achievements">実績</a>
+                <a href="#company">会社概要</a>
+                <a href="#contact">お問い合わせ</a>
+            </div>
+            <p class="copyright">Copyright © 株式会社サンプル All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
