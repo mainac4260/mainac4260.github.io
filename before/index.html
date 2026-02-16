@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社サンプル | Web制作</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>株式会社サンプル</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#service">サービス</a></li>
+                    <li><a href="#company">会社概要</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Web制作ならお任せください</h2>
+            <p>お客様のニーズに合わせた最適なソリューションを提供します。</p>
+            <a href="#contact" class="btn">お問い合わせ</a>
+        </div>
+    </section>
+
+    <section id="service">
+        <div class="container">
+            <h3>サービス紹介</h3>
+            <div class="service-list">
+                <div class="service-item">
+                    <h4>丁寧</h4>
+                    <p>一人ひとりのお客様に寄り添い、丁寧なヒアリングを行います。ご要望をしっかりとお伺いし、形にします。</p>
+                </div>
+                <div class="service-item">
+                    <h4>迅速</h4>
+                    <p>スピーディーな対応を心がけております。お急ぎの案件もご相談ください。納期を守ります。</p>
+                </div>
+                <div class="service-item">
+                    <h4>安心</h4>
+                    <p>サポート体制も万全です。納品後も安心してご利用いただけます。初心者の方でも大丈夫です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="company">
+        <div class="container">
+            <h3>会社概要</h3>
+            <div class="message">
+                <h4>代表挨拶</h4>
+                <p>
+                    はじめまして。株式会社サンプルの代表です。<br>
+                    私たちは、インターネットを通じて社会に貢献することを目指しています。
+                    現代社会において、Webサイトはビジネスに欠かせないツールとなりました。
+                    しかし、どのように活用すれば良いかわからないという声も多く耳にします。
+                    そこで、私たちは皆様のパートナーとして、Webの力で課題解決のお手伝いをさせていただきます。
+                    常にお客様の目線に立ち、誠心誠意取り組んでまいりますので、どうぞよろしくお願いいたします。
+                </p>
+            </div>
+            <table class="company-info">
+                <tr>
+                    <th>会社名</th>
+                    <td>株式会社サンプル</td>
+                </tr>
+                <tr>
+                    <th>設立</th>
+                    <td>2010年4月</td>
+                </tr>
+                <tr>
+                    <th>事業内容</th>
+                    <td>Web制作事業、コンサルティング事業</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>東京都某所</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h3>お問い合わせ</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label>お名前</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="form-group">
+                    <label>メールアドレス</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label>お問い合わせ内容</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <button type="submit">送信</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 株式会社サンプル All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+body {
+    font-family: "MS PGothic", sans-serif; /* Intentionally old/generic font */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 14px; /* Slightly small */
+    line-height: 1.4; /* Slightly tight */
+}
+
+.container {
+    width: 960px; /* Fixed width, not responsive friendly */
+    margin: 0 auto;
+    padding: 10px; /* Low padding */
+}
+
+header {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Clearfix for header */
+header .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hero {
+    background-color: #e6f0ff; /* Weak blue background */
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #999; /* Weak grey button */
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+section {
+    padding: 20px 0; /* Minimal vertical spacing */
+    border-bottom: 1px dotted #ccc;
+}
+
+h3 {
+    border-left: 5px solid #0066cc; /* Generic accent */
+    padding-left: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.service-list {
+    overflow: hidden;
+}
+
+.service-item {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+    background: #f9f9f9;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.service-item:last-child {
+    margin-right: 0;
+}
+
+.company-info {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.company-info th, .company-info td {
+    border: 1px solid #999;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.company-info th {
+    background-color: #eee;
+    width: 30%;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%; /* might overflow if padding added */
+    padding: 5px;
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+/* Rudimentary mobile support */
+@media screen and (max-width: 960px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+    
+    header nav li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .service-item {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+}
