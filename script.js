@@ -1,43 +1,42 @@
-// Minimal JS: mobile nav + tab switch
-(() => {
-  const hamburger = document.querySelector('.hamburger');
-  const mobileNav = document.querySelector('.mobile-nav');
+/**
+ * Before / After 比較LP - Script
+ * スクロール連動のフェードインアニメーション
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    // 比較行のフェードインアニメーション
+    const rows = document.querySelectorAll('.comp-row');
 
-  if (hamburger && mobileNav) {
-    hamburger.addEventListener('click', () => {
-      const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
-      hamburger.setAttribute('aria-expanded', String(!isOpen));
-      mobileNav.hidden = isOpen;
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // 各行を少しずつ遅延させて表示
+                    const row = entry.target;
+                    const delay = Array.from(rows).indexOf(row) * 100;
+                    setTimeout(() => {
+                        row.classList.add('visible');
+                    }, delay);
+                    observer.unobserve(row);
+                }
+            });
+        },
+        {
+            threshold: 0.15,
+            rootMargin: '0px 0px -40px 0px',
+        }
+    );
+
+    rows.forEach((row) => {
+        observer.observe(row);
     });
 
-    mobileNav.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        hamburger.setAttribute('aria-expanded', 'false');
-        mobileNav.hidden = true;
-      });
-    });
-  }
-
-  const tabs = document.querySelectorAll('.tab');
-  const panels = document.querySelectorAll('.panel');
-
-  const setActive = (view) => {
-    tabs.forEach(t => {
-      const active = t.dataset.view === view;
-      t.classList.toggle('is-active', active);
-      t.setAttribute('aria-selected', String(active));
-    });
-    panels.forEach(p => {
-      const show = p.dataset.panel === view;
-      p.hidden = !show;
-    });
-  };
-
-  tabs.forEach(t => {
-    t.addEventListener('click', () => setActive(t.dataset.view));
-  });
-
-  // default
-  setActive('shots');
-})();
-
+    // ページ上部に既に表示されている行を即座に表示
+    setTimeout(() => {
+        rows.forEach((row) => {
+            const rect = row.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.85) {
+                row.classList.add('visible');
+            }
+        });
+    }, 200);
+});
