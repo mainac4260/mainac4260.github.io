@@ -512,10 +512,12 @@ ul {
 }
 
 .hero-eyebrow {
-    font-size: 0.85rem;
+    font-size: 2rem;
+    font-weight: 700;
     letter-spacing: 0.18em;
-    color: #c7d2fe;
-    margin-bottom: 12px;
+    color: #facc15;
+    margin-bottom: 16px;
+    text-shadow: 0 0 20px rgba(250, 204, 21, 0.3);
 }
 
 .hero-lead {
