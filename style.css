@@ -144,10 +144,14 @@ ul {
 .hero-preview-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    overflow: hidden;
+    overflow: visible;
     border: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(8px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: block;
 }
 
 .hero-preview-card:hover {
@@ -169,6 +173,7 @@ ul {
     font-weight: 700;
     letter-spacing: 0.12em;
     text-align: center;
+    border-radius: 12px 12px 0 0;
 }
 
 .badge-before {
@@ -262,11 +267,12 @@ ul {
 
 /* comparison number (01,02...) */
 .comp-number {
-  font-size: 2em;
-  font-weight: 900;
-  color: #94a3b8;   /* ← 見えないならここを調整 */
-  line-height: 1;
-  margin-bottom: 8px;
+    font-size: 2em;
+    font-weight: 900;
+    color: #94a3b8;
+    /* ← 見えないならここを調整 */
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
 
@@ -506,28 +512,44 @@ ul {
 }
 
 .hero-eyebrow {
-  font-size: 0.85rem;
-  letter-spacing: 0.18em;
-  color: #c7d2fe;
-  margin-bottom: 12px;
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    color: #c7d2fe;
+    margin-bottom: 12px;
 }
 
 .hero-lead {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #e5e7eb;
-  margin-bottom: 28px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e5e7eb;
+    margin-bottom: 28px;
+}
+
+.hero-before,
+.hero-after {
+    display: block;
+    width: 100%;
+    margin: 14px auto 0;
+    padding: 12px 18px;
+    border-radius: 9999px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .hero-before {
-  font-size: 1rem;
-  color: #cbd5e1;
-  line-height: 1.6;
+    background: rgba(148, 163, 184, 0.15);
+    color: #cbd5e1;
 }
 
 .hero-after {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #93c5fd;
-  line-height: 1.6;
+    background: linear-gradient(90deg, #facc15, #eab308);
+    color: #1f2933 !important;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    padding: 14px 22px;
+    box-shadow: 0 8px 24px rgba(250, 204, 21, 0.45);
 }
